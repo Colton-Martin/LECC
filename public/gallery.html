@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Lake Erie Chrome Chasers</title>
+    <meta name="description" content="Explore our fishing adventures through our gallery.">
+    <meta name="keywords" content="Gallery, Fishing, Steelhead, Lake Erie, Photos, Adventures">
+    <meta name="author" content="Lake Erie Chrome Chasers">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Lake Erie Chrome Chasers Gallery">
+    <meta property="og:description" content="View photos of our fishing trips and successful catches on Lake Erie.">
+    <meta property="og:image" content="URL_TO_GALLERY_THUMBNAIL_IMAGE">
+    <meta property="og:url" content="https://www.facebook.com/LakeErieChromeChasers/">
+    <meta property="og:type" content="website">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS for gallery layout -->
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar-custom {
+            height: 160px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px 0;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .navbar-custom.scrolled {
+            background: #232f3e;
+        }
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .navbar-nav .nav-link {
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffdd57;
+        }
+
+        /* Gallery Styling */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery img:hover {
+            filter: brightness(75%);
+            transition: filter 0.3s ease;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #232f3e;
+            color: #f8f9fa;
+            padding: 100px 0;
+        }
+        .footer h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .footer p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+        .footer a {
+            color: #f8f9fa;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer a:hover {
+            color: #ffdd57;
+        }
+        .footer .social-icons a {
+            margin: 0 15px;
+            font-size: 1.8rem;
+            transition: color 0.3s ease;
+        }
+        .footer .social-icons a:hover {
+            color: #ffdd57;
+        }
+
+
+        /* nav section */
+        .navbar-custom {
+            height: 160px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px 0;
+            transition: background 0.5s ease;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .navbar-custom.scrolled {
+            background: #232f3e;
+        }
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 0.1rem;
+        }
+        .navbar-nav .nav-link {
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffdd57;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Lake Erie Chrome Chasers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="main.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item pt-1"><a href="https://www.facebook.com/LakeErieChromeChasers"><i class="fab fa-facebook nav-link"></i></a></li>
+                    <li class="nav-item pt-1"><a href="https://www.instagram.com/lakeeriechromechasers"><i class="fab fa-instagram nav-link"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <img src="photos/IMG_0234.JPG" alt="Fishing Adventure 1">
+        <img src="photos/IMG_0527.JPG" alt="Fishing Adventure 2">
+        <img src="photos/IMG_0544.JPG" alt="Fishing Adventure 3">
+        <img src="photos/IMG_0901.JPG" alt="Fishing Adventure 4">
+        <img src="photos/IMG_2134.JPG" alt="Fishing Adventure 5">
+        <img src="photos/IMG_2402.JPG" alt="Fishing Adventure 6">
+        <img src="photos/IMG_3655.JPG" alt="Fishing Adventure 7">
+        <img src="photos/IMG_3705.JPG" alt="Fishing Adventure 8">
+        <img src="photos/IMG_3781.JPG" alt="Fishing Adventure 9">
+        <img src="photos/IMG_5366.JPG" alt="Fishing Adventure 10">
+        <!-- Add more images as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Guide Service in Erie, Pennsylvannia</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/LakeErieChromeChasers"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lakeeriechromechasers"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 Lake Erie Chrome Chasers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
